@@ -14,12 +14,30 @@ function drawSpirograph(event) {
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 1;
 
+    size = 100 * 1/R;
+    console.log(size);
+
     // center
     const cx = canvas.width / 2;
     const cy = canvas.height / 2;
 
     // We'll use the common spirograph param where O (offset) defaults to r/2 for visible patterns
     const O = 1;
+    
+
+    // TODO 
+    /*
+    check or remove O
+    read about ctx move line functionaliy
+
+    differenciate equations to find max lengths for x and y to set size
+    add more variable input, as well as some buttons for presets
+    add color options
+    clean up index.html with style.css create dilineation between input and canvas (draw box around canvas and put a line between input)
+    
+
+    */
+
 
     // start
     let t = 0;
