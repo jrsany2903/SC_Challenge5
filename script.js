@@ -19,6 +19,9 @@ function drawSpirograph(event) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.strokeStyle = '#000';
+
+
+    ctx.strokeStyle = document.getElementById('colourInput').value;
     ctx.lineWidth = 1;
     resolution = parseFloat(document.getElementById('resolutionInput').value) / 1000;
 
@@ -31,14 +34,8 @@ function drawSpirograph(event) {
 
     // TODO 
     /*
-    read about ctx move line functionaliy
 
-    differenciate equations to find max lengths for x and y to set size
     add more variable input, as well as some buttons for presets
-    add color options
-    clean up index.html with style.css create dilineation between input and canvas (draw box around canvas and put a line between input)
-
-
     */
 
 

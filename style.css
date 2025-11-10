@@ -1,0 +1,59 @@
+:root{
+  --bg: #f4f4e5;  
+  --text: #033716;
+  --font: arial, sans-serif;
+}
+
+
+html, body{
+  height:100%;
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px var(--font);
+}
+#qr{
+  display:block;
+  margin: 20px auto;
+  width:150px;
+  height:150px;
+}
+
+.main{
+  max-width:900px;
+  margin:40px auto;
+  padding:20px;
+  border-radius:10px;
+  border: 1px solid rgba(122,208,255,0.06);
+}
+
+h1{
+  margin:0 0 12px 0;
+  color:var(--text);
+  font-size:1.6rem;
+}
+
+/* Make the var-input controls sit next to each other */
+.var-input{
+  display:inline-block;
+  margin-right:12px;
+}
+
+.var-input label{
+  display:block;
+  font-size:0.85rem;
+  color: var(--text);
+  margin-bottom:6px;
+}
+
+
+canvas#SpirographCanvas{
+  display:block;
+  margin-top:18px;
+  width:auto;
+  height:auto;
+
+  background: rgb(255, 255, 255);
+  border-radius:6px;
+  border:1px solid rgb(0, 0, 0);
+}

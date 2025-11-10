@@ -5,7 +5,7 @@
     <title>Spirograph Playground</title>
 </head>
 <body onload="init()">
-    <div class="container">
+    <div class="main">
         <h1>Spirograph Playground</h1>
             <div class="var-input">
                 <label for="Rinput">Large Radius</label>
@@ -17,15 +17,21 @@
             </div>
             <div class="var-input">
                 <label for="oInput">pen offset in small circle</label>
-                <input type="range" id="oInput" name="oInput" value="0" oninput="drawSpirograph()">
+                <input type="range" id="oInput" name="oInput" value="1" oninput="drawSpirograph()">
             </div>
             <div class="var-input">
                 <label for="resolutionInput">resolution</label>
-                <input type="range" min = 0 max = 1000 id="resolutionInput" name="resolutionInput" value="1" oninput="drawSpirograph()">
+                <input type="range" min = 1 max = 3000 id="resolutionInput" name="resolutionInput" value="1" oninput="drawSpirograph()">
+            </div>
+            <div class="var-input">
+                <label for="colourInput">Colour</label>
+                <input type="color" id="colourInput" name="colourInput" value="#000" >
             </div>
         <canvas id="SpirographCanvas" width="600" height="400"></canvas>
     </div>
-
+    <div>   
+        <img id = "qr" src = "Qr_code.PNG" >
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
