@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Spirograph Playground</title>
 </head>
-<body onload="drawSpirograph()">
+<body onload="init()">
     <div class="container">
         <h1>Spirograph Playground</h1>
             <div class="var-input">
@@ -14,6 +14,14 @@
             <div class="var-input">
                 <label for="rInput">Small Radius</label>
                 <input type="number" id="rInput" name="rInput" value="11" oninput="drawSpirograph()">
+            </div>
+            <div class="var-input">
+                <label for="oInput">pen offset in small circle</label>
+                <input type="range" id="oInput" name="oInput" value="0" oninput="drawSpirograph()">
+            </div>
+            <div class="var-input">
+                <label for="resolutionInput">resolution</label>
+                <input type="range" min = 0 max = 1000 id="resolutionInput" name="resolutionInput" value="1" oninput="drawSpirograph()">
             </div>
         <canvas id="SpirographCanvas" width="600" height="400"></canvas>
     </div>
