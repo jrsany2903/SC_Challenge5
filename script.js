@@ -30,6 +30,7 @@ function drawSpirograph(event) {
     const cy = canvas.height / 2;
 
     const O = parseFloat(document.getElementById('oInput').value);
+    document.getElementById('oInput').max = r;
     size = (Math.min(cx,cy) - padding)/((R-r) + O);
 
     // TODO 
